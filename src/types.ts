@@ -76,6 +76,7 @@ export type ProviderName =
   | "openrouter"
   | "groq"
   | "opencode-go"
+  | "cheaperinference"
   | "ollama"
   | "vllm"
   | "custom";
@@ -123,6 +124,13 @@ export const PROVIDER_PRESETS: Record<ProviderName, ProviderPreset> = {
   "opencode-go": {
     label: "OpenCode Go",
     endpoint: "https://opencode.ai/zen/go/v1/chat/completions",
+    model: "deepseek-v4-flash",
+    needsAuth: true,
+    supportsJsonFormat: true,
+  },
+  cheaperinference: {
+    label: "Cheaper Inference",
+    endpoint: "https://api.cheaperinference.com/v1/chat/completions",
     model: "deepseek-v4-flash",
     needsAuth: true,
     supportsJsonFormat: true,

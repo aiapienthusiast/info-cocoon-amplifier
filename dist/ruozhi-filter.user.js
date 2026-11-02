@@ -14,6 +14,7 @@
 // @connect      openrouter.ai
 // @connect      api.groq.com
 // @connect      opencode.ai
+// @connect      api.cheaperinference.com
 // @connect      localhost
 // @connect      127.0.0.1
 // @grant        GM_deleteValue
@@ -58,6 +59,13 @@
     "opencode-go": {
       label: "OpenCode Go",
       endpoint: "https://opencode.ai/zen/go/v1/chat/completions",
+      model: "deepseek-v4-flash",
+      needsAuth: true,
+      supportsJsonFormat: true
+    },
+    cheaperinference: {
+      label: "Cheaper Inference",
+      endpoint: "https://api.cheaperinference.com/v1/chat/completions",
       model: "deepseek-v4-flash",
       needsAuth: true,
       supportsJsonFormat: true

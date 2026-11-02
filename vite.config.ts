@@ -22,6 +22,7 @@ export default defineConfig({
           "openrouter.ai",
           "api.groq.com",
           "opencode.ai",
+          "api.cheaperinference.com",
           "localhost",
           "127.0.0.1",
         ],
